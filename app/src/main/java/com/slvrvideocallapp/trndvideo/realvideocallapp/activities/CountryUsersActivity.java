@@ -161,7 +161,7 @@ Log.e("xxxxxxxxxxx","selected");
                             public void onClick(View v) {
 
                                 if(mail_text.getText().toString()!=null){
-                                    Intent email = context.getPackageManager().getLaunchIntentForPackage("com.google.android.gm");
+                                    Intent email = new Intent(Intent.ACTION_SEND);
                                     email.putExtra(Intent.EXTRA_EMAIL, new String[]{ "abc@gmail.com"});
                                     email.putExtra(Intent.EXTRA_SUBJECT, "Pornographic");
                                     email.putExtra(Intent.EXTRA_TEXT, mail_text.getText().toString());
@@ -169,7 +169,7 @@ Log.e("xxxxxxxxxxx","selected");
 //need this to prompts email client only
                                     email.setType("message/rfc822");
 
-                                    startActivity(email);
+                                    startActivity(Intent.createChooser(email, "Choose an Email client :"));
                                     alertDialog.cancel();
 
                                 }else{
@@ -191,7 +191,7 @@ Log.e("xxxxxxxxxxx","selected");
                             public void onClick(View v) {
 
                                 if(mail_text.getText().toString()!=null){
-                                    Intent email = context.getPackageManager().getLaunchIntentForPackage("com.google.android.gm");
+                                    Intent email =  new Intent(Intent.ACTION_SEND);
                                     email.putExtra(Intent.EXTRA_EMAIL, new String[]{ "abc@gmail.com"});
                                     email.putExtra(Intent.EXTRA_SUBJECT, "Fake Gender.");
                                     email.putExtra(Intent.EXTRA_TEXT, mail_text.getText().toString());
@@ -199,7 +199,7 @@ Log.e("xxxxxxxxxxx","selected");
 //need this to prompts email client only
                                     email.setType("message/rfc822");
 
-                                    startActivity(email);
+                                    startActivity(Intent.createChooser(email, "Choose an Email client :"));
                                     alertDialog.cancel();
 
                                 }else{
@@ -225,7 +225,7 @@ Log.e("xxxxxxxxxxx","selected");
                             public void onClick(View v) {
 
                                 if(mail_text.getText().toString()!=null){
-                                    Intent email = context.getPackageManager().getLaunchIntentForPackage("com.google.android.gm");
+                                    Intent email =  new Intent(Intent.ACTION_SEND);
                                     email.putExtra(Intent.EXTRA_EMAIL, new String[]{ "abc@gmail.com"});
                                     email.putExtra(Intent.EXTRA_SUBJECT, "Cheating");
                                     email.putExtra(Intent.EXTRA_TEXT, mail_text.getText().toString());
@@ -233,7 +233,7 @@ Log.e("xxxxxxxxxxx","selected");
 //need this to prompts email client only
                                     email.setType("message/rfc822");
 
-                                    startActivity(email);
+                                    startActivity(Intent.createChooser(email, "Choose an Email client :"));
                                     alertDialog.cancel();
 
                                 }else{
@@ -254,15 +254,14 @@ Log.e("xxxxxxxxxxx","selected");
                             public void onClick(View v) {
 
                                 if(mail_text.getText().toString()!=null){
-                                    Intent email = context.getPackageManager().getLaunchIntentForPackage("com.google.android.gm");;
+                                    Intent email =  new Intent(Intent.ACTION_SEND);
                                     email.putExtra(Intent.EXTRA_EMAIL, new String[]{ "abc@gmail.com"});
                                     email.putExtra(Intent.EXTRA_SUBJECT, "Language Violence");
                                     email.putExtra(Intent.EXTRA_TEXT, mail_text.getText().toString());
 
 //need this to prompts email client only
                                     email.setType("message/rfc822");
-
-                                    startActivity(email);
+                                    startActivity(Intent.createChooser(email, "Choose an Email client :"));
                                     alertDialog.cancel();
 
                                 }else{
@@ -283,7 +282,7 @@ Log.e("xxxxxxxxxxx","selected");
                             public void onClick(View v) {
 
                                 if(mail_text.getText().toString()!=null){
-                                    Intent email = context.getPackageManager().getLaunchIntentForPackage("com.google.android.gm");
+                                    Intent email =  new Intent(Intent.ACTION_SEND);
                                     email.putExtra(Intent.EXTRA_EMAIL, new String[]{ "abc@gmail.com"});
                                     email.putExtra(Intent.EXTRA_SUBJECT, "Others Issue");
                                     email.putExtra(Intent.EXTRA_TEXT, mail_text.getText().toString());
@@ -291,7 +290,7 @@ Log.e("xxxxxxxxxxx","selected");
 //need this to prompts email client only
                                     email.setType("message/rfc822");
 
-                                    startActivity(email);
+                                    startActivity(Intent.createChooser(email, "Choose an Email client :"));
                                     alertDialog.cancel();
 
                                 }else{
