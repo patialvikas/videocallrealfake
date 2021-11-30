@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/li_porn"
+    android:layout_marginTop="10dp"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="7dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="35dp"
+        android:maxWidth="35dp"
+
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_porn" />
+
+    <TextView
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="20sp"
+        android:paddingRight="30dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Pornographic behavior" />
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/li_fake"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="35dp"
+            android:maxWidth="35dp"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_fake_gender" />
+
+        <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:paddingRight="30dp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Fake Gender" />
+
+    </LinearLayout>
+
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/li_cheat"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="35dp"
+            android:maxWidth="35dp"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_cheat" />
+
+        <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:paddingRight="30dp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Cheat" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/li_lang"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="35dp"
+            android:maxWidth="35dp"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_lang" />
+
+        <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="19sp"
+            android:paddingRight="30dp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Language Violence" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/li_other"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="35dp"
+            android:maxWidth="35dp"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_others" />
+
+        <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:paddingRight="30dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Others" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/li_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/edit_gmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+        </EditText>
+        <Button
+            android:id="@+id/send_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Send"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            >
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/li_cancel"
+        android:padding="15dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            ></TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000" />
+</LinearLayout>

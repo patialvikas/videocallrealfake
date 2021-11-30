@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/connecting_gradient"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/playerview_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+
+        >
+
+
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/playerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:padding="0dp"
+            app:controller_layout_id="@layout/item_player_controler"
+            app:use_controller="false"
+            app:resize_mode="fixed_height"
+            app:show_timeout="1000"
+            app:shutter_background_color="@color/black"
+            />
+
+        <LinearLayout
+            android:id="@+id/buttons_call_container"
+            android:orientation="horizontal"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginBottom="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+
+            <ImageButton
+                android:id="@+id/button_call_disconnect"
+                android:background="@drawable/disconnect"
+                android:contentDescription="@string/disconnect_call"
+                android:layout_marginEnd="16dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"/>
+            <ImageButton
+                android:id="@+id/button_call_toggle_mic"
+                android:background="@drawable/btn_unmute_normal"
+                android:contentDescription="@string/toggle_mic"
+                android:layout_marginEnd="8dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="fitXY"
+                />
+        </LinearLayout>
+
+        <SurfaceView
+            android:id="@+id/pip_video_view"
+            android:layout_height="144dp"
+            android:layout_width="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:layout_toRightOf="@id/buttons_call_container"
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_anim_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_centerInParent="true"
+        app:lottie_rawRes="@raw/matching_animation"
+        android:visibility="visible"
+        >
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/profile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/demo_user"
+        android:visibility="visible"
+        />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/room_edittext_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/room_description" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            >
+
+            <!-- TODO(crbug.com/900912): Fix and remove lint ignore -->
+            <EditText
+                android:id="@+id/room_edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                tools:ignore="LabelFor,Autofill" />
+
+            <ImageButton
+                android:id="@+id/connect_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:drawable/sym_action_call"
+                android:contentDescription="@string/connect_description" />
+
+            <ImageButton
+                android:id="@+id/add_favorite_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:drawable/ic_input_add"
+                android:contentDescription="@string/add_favorite_description" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/room_listview_description"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/favorites"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ListView
+                android:id="@+id/room_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawSelectorOnTop="false" />
+
+            <TextView
+                android:id="@android:id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/no_favorites" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+include ':nativegoogle1'
+include ':nativegoogle'
+include ':demo'
+include ':app'
+rootProject.name = "videocallrealfake"

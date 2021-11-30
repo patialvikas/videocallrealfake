@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_home_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_simple"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/fbadsnative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/black">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="3dp">
+
+            <FrameLayout
+                android:id="@+id/fl_adplaceholderr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/native_ad_containerr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardr"
+            android:orientation="vertical" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:layout_above="@+id/banner_container"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20.0dip">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/random_video_call"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/talk_with_random_people_n_from_all_around_the_globe_n_make_new_friends_and_have_fun"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/startCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:text="@string/get_started"
+                android:textAllCaps="false"
+                app:backgroundTint="@color/main_green_color"
+                app:cornerRadius="20dp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        />
+
+
+</RelativeLayout>

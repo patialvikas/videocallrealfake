@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "834010428313",
+    "project_id": "videocall3-fde07",
+    "storage_bucket": "videocall3-fde07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834010428313:android:571f68b6e1608e06f49908",
+        "android_client_info": {
+          "package_name": "com.slvrvideocallapp.trndvideo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834010428313-e88gitr4p48i260j1drcmffjpb467n8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRu6JOUxKLU2w4-ZoGbLIpu3HmOlMtRz4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834010428313-e88gitr4p48i260j1drcmffjpb467n8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

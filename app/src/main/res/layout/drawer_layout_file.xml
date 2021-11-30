@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="40dp">
+
+                <RelativeLayout
+                    android:id="@+id/navhome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/nav_drawer_rvpadding">
+
+                    <ImageView
+                        android:layout_width="@dimen/nav_drawericonsize"
+                        android:layout_height="@dimen/nav_drawericonsize"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/dic_baseline_home"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:text="Home"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/nav_drawertextsize" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/navEarnCoins"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/nav_drawer_rvpadding">
+
+                    <ImageView
+                        android:layout_width="@dimen/nav_drawericonsize"
+                        android:layout_height="@dimen/nav_drawericonsize"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/dearningsss"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:text="Earn Coins"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/nav_drawertextsize" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/navProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/nav_drawer_rvpadding">
+
+                    <ImageView
+                        android:layout_width="@dimen/nav_drawericonsize"
+                        android:layout_height="@dimen/nav_drawericonsize"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/dic_baseline_personnnn"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:text="Profile"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/nav_drawertextsize" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/navrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/nav_drawer_rvpadding">
+
+                    <ImageView
+                        android:layout_width="@dimen/nav_drawericonsize"
+                        android:layout_height="@dimen/nav_drawericonsize"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_sharp_star_24"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:text="Rate App"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/nav_drawertextsize" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/navshare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/nav_drawer_rvpadding">
+
+                    <ImageView
+                        android:layout_width="@dimen/nav_drawericonsize"
+                        android:layout_height="@dimen/nav_drawericonsize"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_share"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:text="Share App"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/nav_drawertextsize" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/navabout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/nav_drawer_rvpadding">
+
+                    <ImageView
+                        android:layout_width="@dimen/nav_drawericonsize"
+                        android:layout_height="@dimen/nav_drawericonsize"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/dic_baseline_info"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:text="About Us"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/nav_drawertextsize" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/navmore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/nav_drawer_rvpadding">
+
+                    <ImageView
+                        android:layout_width="@dimen/nav_drawericonsize"
+                        android:layout_height="@dimen/nav_drawericonsize"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/dic_moreeee"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:text="More Apps"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/nav_drawertextsize" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/navprivacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/nav_drawer_rvpadding">
+
+                    <ImageView
+                        android:layout_width="@dimen/nav_drawericonsize"
+                        android:layout_height="@dimen/nav_drawericonsize"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/dic_baseline_lock"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/nav_drawertextsize" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

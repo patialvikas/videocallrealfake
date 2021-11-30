@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dbg_greadentbackkkk"
+        android:orientation="vertical"
+        tools:context=".activity.LoginActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dchatbackkkkk" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="100dp"
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Login With Mobile"
+                        android:textColor="@color/purplepink"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvextra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:text="ENTER THE OTP"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tvmobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvextra"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="send to "
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:id="@+id/lyt_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="20dp"
+                            android:gravity="bottom"
+                            android:paddingHorizontal="20sp">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:textColorHint="@color/graydark"
+                                app:boxStrokeColor="@color/purpleblue"
+                                app:hintTextColor="@color/graydark">
+
+                                <EditText
+
+                                    android:id="@+id/etMobile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@android:color/transparent"
+                                    android:hint="Mobile number"
+                                    android:inputType="phone"
+                                    android:minWidth="290dp"
+                                    android:paddingVertical="5dp"
+                                    android:paddingStart="45dp"
+                                    android:paddingLeft="45dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/graydark" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginStart="45dp"
+                                    android:layout_marginLeft="45dp"
+                                    android:background="@color/graydark" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="1dp"
+                                android:gravity="bottom"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="+"
+                                        android:textColor="@color/black"
+                                        android:textSize="20sp" />
+
+                                    <EditText
+                                        android:id="@+id/etCountry"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/transparent"
+                                        android:text="91"
+                                        android:textColor="@color/black"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/graydark" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <com.chaos.view.PinView
+                            android:id="@+id/fieldVerificationCode"
+                            style="@style/PinWidget.PinView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvmobile"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="50dp"
+                            android:cursorVisible="true"
+                            android:focusableInTouchMode="true"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:textColor="@color/purplepink"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            app:cursorColor="@color/purplepink"
+                            app:cursorWidth="2dp"
+                            app:hideLineWhenFilled="false"
+                            app:itemCount="6"
+                            app:itemHeight="45dp"
+                            app:itemRadius="4dp"
+                            app:itemSpacing="4dp"
+                            app:itemWidth="45dp"
+                            app:lineColor="@color/purpleblue"
+                            app:lineWidth="2dp"
+                            app:viewType="rectangle"
+
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvresendOtp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lyt_mobile"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Didnt Recive OTP?"
+                        android:textColor="@color/graydark"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvtimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tvContinue"
+                        android:layout_below="@id/tvresendOtp"
+                        android:layout_centerHorizontal="true"
+                        android:onClick="onClickResendOTP"
+                        android:text="00"
+                        android:textColor="@color/graydark" />
+
+                    <TextView
+                        android:id="@+id/tvgetOtp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/dbg_greadentbackrounddd"
+                        android:onClick="onClickGetOTP"
+                        android:paddingHorizontal="60dp"
+                        android:paddingVertical="10dp"
+                        android:text="GET OTP"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvContinue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/dbg_greadentbackrounddd"
+                        android:onClick="onClickCountinue"
+                        android:paddingHorizontal="60dp"
+                        android:paddingVertical="10dp"
+                        android:text="Continue"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="20dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvsignin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Sign In"
+                        android:textColor="@color/black"
+                        android:textSize="28dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageview"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/tvsignin"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/dbg_greadentbackrounddd"
+                            android:onClick="onClickWithMobile"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/dcalldddd" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginVertical="10dp"
+                                android:text="Login With Mobile"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rlClickWithGoogle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/dbg_greadentbackrounddd"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/google" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="100dp"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="Login With Google"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/checkboxSign"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_gravity="center"
+                                android:focusable="false"
+                                android:textColor="@color/black" />
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="By Signing in you are agreeing to our"
+                                    android:textColor="@color/black" />
+                                <TextView
+                                    android:onClick="openP"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Terms &amp; Privacy Policy"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/btnSkip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dp"
+                        android:onClick="onClickSkip"
+                        android:text="Skip"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/pd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:indicatorColor="#FF0358"
+            app:indicatorName="BallClipRotatePulseIndicator" />
+    </RelativeLayout>
+</layout>

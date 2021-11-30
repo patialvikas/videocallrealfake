@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF4D99</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="pink">#E96E84</color>
+    <color name="purpleblue">#250036</color>
+    <color name="purplepink">#7F0060</color>
+    <color name="gray">#DAD9E2</color>
+    <color name="graydark">#AEAEAE</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="tomato">#FF4747</color>
+    <color name="lightblack">#463C3C</color>
+    <color name="color_gray">#999999</color>
+    <color name="cgreen">#30ae74</color>
+    <color name="csky">#38a0e7</color>
+    <color name="cpink">#ca3c76</color>
+    <color name="cyellow">#faa528</color>
+    <color name="cwhite">#f2f2e8</color>
+    <color name="cgreen2">#06D50E</color>
+    <color name="cred">#e65051</color>
+    <color name="cyellow2">#fba629</color>
+    <color name="start">#faa4a4</color>
+    <color name="screen_first">#c0c2e6</color>
+    <color name="profiletextcolor">#9A3737</color>
+    <color name="red">#FF1100</color>
+    <color name="chatprimary">#7F0060</color>
+    <color name="localBackground">#827b92</color>
+    <color name="remoteBackground">#484258</color>
+    <color name="forground">#f3f4ff</color>
+    <color name="yellow">#F49C07</color>
+
+    <color name="white_ads">#000000</color>
+    <color name="gray_ads">#ffffff</color>
+    <color name="white_text">#BDBDBD</color>
+    <color name="black_ads">#333333</color>
+
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="green">#4CAF50</color>
+</resources>

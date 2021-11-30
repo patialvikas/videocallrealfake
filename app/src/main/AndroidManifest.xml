@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.slvrvideocallapp.trndvideo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:name=".ApplicationCls"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:screenOrientation="portrait"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/nsecurityconfig"
+        android:windowSoftInputMode="adjustPan"
+        tools:replace="android:supportsRtl, android:networkSecurityConfig">
+
+        <service android:name="ClearService" android:stopWithTask="false" />
+
+        <activity android:name=".activity.RoomListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.DStartActivityyyy"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.MaleFemaleActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.DFirstActivityyy"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ThumbListActivity"
+            android:screenOrientation="portrait"/>
+<!--        <activity android:name=".activity.LiveActivity" />-->
+        <activity
+            android:name=".activity.ChatActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.EarnActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DSplashScrnActvty"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.NewUserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VideoActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.CountryListActivity" />
+        <activity android:name=".activity.DExitActivityyy" />
+        <activity android:name=".ExxtScndActvtyyyy" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <service
+            android:name=".FirebaseMessage"
+            android:directBootAware="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ddnoti_icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/purplepink" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <!--realvideocall-->
+        <activity
+            android:name="com.slvrvideocallapp.trndvideo.realvideocallapp.activities.CountryUsersActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.slvrvideocallapp.trndvideo.realvideocallapp.activities.HomeCategoryActivity"
+            android:exported="true">
+
+        </activity>
+        <activity android:name="com.slvrvideocallapp.trndvideo.realvideocallapp.activities.CallActivity" />
+        <activity android:name="com.slvrvideocallapp.trndvideo.realvideocallapp.activities.ConnectingActivity" />
+        <activity android:name="com.slvrvideocallapp.trndvideo.realvideocallapp.activities.LoginActivity" />
+        <activity
+            android:name="com.slvrvideocallapp.trndvideo.realvideocallapp.apprtc.ConnectActivity"
+            android:windowSoftInputMode="adjustPan">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="appr.tc"
+                    android:scheme="https" />
+                <data
+                    android:host="appr.tc"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.slvrvideocallapp.trndvideo.realvideocallapp.apprtc.SettingsActivity"
+            android:label="@string/settings_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.slvrvideocallapp.trndvideo.realvideocallapp.apprtc.CallActivity"
+            android:configChanges="orientation|smallestScreenSize|screenSize|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="fullUser"
+            android:theme="@style/CallActivityTheme" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>
